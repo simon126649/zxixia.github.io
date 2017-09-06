@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<!-- 网页头部信息 -->
+	{% include head.html %}
+	
+  <body>
+		
+		<!-- 网页顶部导航条 -->
+    {% include nav.html %}
+
+    <div class="container">
+
+      <!-- 网页顶部站点名称 -->
+    	{% include header.html %}
+
+      <div class="row">
+
+				<!-- 
+				中间的主界面
+				         |----------------|--|------|
+				col-sm-8,      主界面  
+				-->
+        <div class="col-sm-8 blog-main">
+
+				<!-- 
+				别的页面的内容往这里面填充 
+				比如home.html中的内容
+				-->
+				{{ content }}
+
+        </div><!-- /.blog-main -->
+
+				<!-- 
+				左侧的侧边栏 
+								 |----------------|--|------|
+				col-sm-3,                    左侧边栏
+				col-sm-offset-1           偏移
+				-->
+				<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+					{% include slide.html %}
+				</div><!-- /.blog-sidebar -->
+			
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+	<!-- 底部的通用信息 -->
+	{% include footer.html %}
+
+	<!-- 底部的bootstrap引用 -->
+	{% include foot.html %}
+
+  </body>
+</html>
