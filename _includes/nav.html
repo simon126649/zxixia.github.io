@@ -1,11 +1,8 @@
 <div class="blog-masthead">
   <div class="container">
     <nav class="blog-nav">
-      <a class="blog-nav-item active" href="#">Home</a>
-      <a class="blog-nav-item" href="#">New features</a>
-      <a class="blog-nav-item" href="#">Press</a>
-      <a class="blog-nav-item" href="#">New hires</a>
-      <a class="blog-nav-item" href="#">About</a>
+      <a class="blog-nav-item {% if page.nav == "home" %} active{% endif %}" href="{{ site.url }}/">Home</a>
+      <a class="blog-nav-item {% if page.nav == "about" %} active{% endif %}" href="{{ site.url }}/about/">About</a>
     </nav>
   </div>
 </div>
