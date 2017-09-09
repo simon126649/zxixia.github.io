@@ -6,3 +6,4 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 highlighter: rouge
+exclude: ["*.bak"] # 排除某一类文件

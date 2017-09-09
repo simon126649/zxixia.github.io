@@ -4,14 +4,14 @@
 	<!-- 这是针对网站首页显示tags的情形 -->
 	{% if post.tags %}
 		{% for tag in post.tags %}
-	    	<a class="blog-label blog-label-info" href="{{ site.baseurl }}/tags#{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a>
+	    	<a class="blog-label blog-label-info" href="{{ site.baseurl }}/site/tags#{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a>
 	  {% endfor %}
 	{% endif %}
 	
 	<!-- 这是针对具体的每一篇post的文章显示tags的情形 -->
 	{% if page.tags %}
 		{% for tag in page.tags %}
-	    	<a align="right" class="blog-label blog-label-info" href="{{ site.baseurl }}/tags#{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a>
+	    	<a align="right" class="blog-label blog-label-info" href="{{ site.baseurl }}/site/tags#{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }}</a>
 	  {% endfor %}
 	{% endif %}
 </p>
