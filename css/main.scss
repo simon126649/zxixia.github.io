@@ -1,0 +1,6 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "blog";      /* 主要的样式 */
+@import "github";   /* 代码高亮的样式 */
