@@ -1,9 +1,0 @@
-﻿title: 西夏情报站！
-description: 西夏的个人网站，编程，历史，交通，文学，影视...
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
-exclude: ["*.bak"] # 排除某一类文件
