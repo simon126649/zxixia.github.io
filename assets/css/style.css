@@ -82,8 +82,8 @@ article .share .gplus:hover {
 }
 
 .page-header {
-	color: #e74c3c;
-	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+	color: #0977b6; /** 标题颜色 */
+	/** text-shadow: 1px 1px 1px rgba(150, 150, 150, 1); */ /** 关闭标题阴影 */
 }
 
 @media only screen and (min-width: 768px) {
@@ -99,6 +99,7 @@ article{
 .article_body{
 	margin-top: 20px;
 	margin-bottom: 20px;
+	font-size: 17px;  /** 设置文章内页文字大小 */
 }
 
 .post-date {
@@ -115,6 +116,7 @@ article.home div a, article.home pre a { color: #2c3e50; }
 article.home div a:hover, article.home pre a:hover { color: #2c3e50; text-decoration: none; }
 article img { max-width: 100%; }
 
+/** 下面这些标题对应于markdown中的#，##，###，####，#####，#####级标题 */
 h1,h2,h3,h4,h5,h6 { font-family: 'Ubuntu', sans-serif; }
 article.home h1,
 article.home h2,
@@ -123,20 +125,24 @@ article.home h4,
 article.home h5,
 article.home h6 {
 	font-family: 'Ubuntu', sans-serif;
-	color: #f2756a;
+	color: #0977b6;  /** 首页标题颜色 */
 }
 
 article.home h1 a,
 article.home h2 a,
 article.home h3 a,
 article.home h4 a {
-	color: #f2756a;
+	color: #0977b6;  /** 首页标题颜色 */
 }
 article.home h1 a:hover,
 article.home h2 a:hover,
 article.home h3 a:hover,
 article.home h4 a:hover {
 	color: #e74c3c;
+}
+/** 首页文章简介的文字大小 */
+.post-description {
+	font-size: 17px;	
 }
 
 .author .author-image {

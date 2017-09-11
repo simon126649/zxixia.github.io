@@ -71,6 +71,8 @@
 
 		<hr>
 
+		<!-- 
+		去除原先文章底部的分享和作者信息区域
 		<div>
       <section class="share col-sm-6">
         <h4 class="section-title">Share Post</h4>
@@ -97,19 +99,19 @@
         <p class="author-bio">{{site.author.bio}}</p>
       </section>
     </div>
-
+		-->
     <div class="clearfix"></div>
 
 		<ul class="pager">
 		  {% if page.previous %}
-		  <li class="previous"><a href="{{ site.BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+		  <li class="previous"><a href="{{ site.BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; 前一篇</a></li>
 		  {% else %}
-		  <li class="previous disabled"><a>&larr; Previous</a></li>
+		  <li class="previous disabled"><a>&larr; 前一篇</a></li>
 		  {% endif %}
 		  {% if page.next %}
-		  <li class="next"><a href="{{ site.BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+		  <li class="next"><a href="{{ site.BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇 &rarr;</a></li>
 		  {% else %}
-			<li class="next disabled"><a>Next &rarr;</a>
+			<li class="next disabled"><a>下一篇 &rarr;</a>
 		  {% endif %}
 		</ul>
 
