@@ -35,6 +35,9 @@
 </head>
 
 <body>
+	<!-- 
+	visible-xs: 小设备（小于 768px）可见
+	-->
 	<nav class="navbar navbar-default visible-xs" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -44,6 +47,24 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="{{ site.BASE_PATH }}/">
+				<i class="fa fa-home"></i>
+			</a>
+			
+			<a type="button" class="navbar-toggle nav-link" href="{{ site.BASE_PATH }}/categories.html">
+				<i class="fa fa-folder-open"></i>
+			</a>
+			
+			<a type="button" class="navbar-toggle nav-link" href="{{ site.BASE_PATH }}/tags.html">
+				<i class="fa fa-tag"></i>
+			</a>
+			
+			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
+				<img src="/assets/images/xixia.gif" width="30px" class="img-circle" />
+				{{ site.title }}
+			</a>
+			<!-- 
 			{% if site.author.github %}
 			<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
 				<i class="fa fa-github"></i>
@@ -63,32 +84,55 @@
 				<img src="//www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" />
 				{{ site.title }}
 			</a>
+			-->
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="{{ site.BASE_PATH }}/">Home</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>
+				<li class="active"><a href="{{ site.BASE_PATH }}/">首页</a></li>
+				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">分类</a></li>
+				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">标签</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
 
 	<!-- nav-menu-dropdown -->
-	<div class="btn-group hidden-xs" id="nav-menu">
+	<!-- 
+		右上角的功能按钮
+		hidden-xs: 小设备（小于 768px）隐藏
+	-->
+	<div class="btn-group-vertical hidden-xs" id="nav-menu">
+		<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/" title="首页">
+			<i class="fa fa-home fa-lg"></i>
+		</a>
+		<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/categories.html" title="分类">
+			<i class="fa fa-folder-open fa-lg"></i>
+		</a>
+		<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/tags.html" title="标签">
+			<i class="fa fa-tag fa-lg"></i>
+		</a>
+		<a class="btn btn-default btn-sm" href="#" title="回到顶部">
+			<i class="fa fa-arrow-up fa-lg"></i>
+		</a>
+		<!--
 		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 			<i class="fa fa-bars"></i>
 		</button>
 		<ul class="dropdown-menu" role="menu">
-			<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>Home</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>Categories</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>首页</a></li>
+			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>分类</a></li>
+			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>标签</a></li>
 			<li class="divider"></li>
-			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>回到顶部</a></li>
 		</ul>
+		-->
 	</div>
 
+	<!--
+		左侧边栏 
+		hidden-xs: 小设备（小于 768px）隐藏
+	-->
 	<div class="col-sm-3 sidebar hidden-xs" style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) no-repeat !important;{% endif %}">
 		{% include sidebar.html %}
 	</div>
