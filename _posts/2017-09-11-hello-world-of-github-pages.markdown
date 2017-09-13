@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello World of Github Pages！"
 categories: Programmer
-tags: 教程 Jekyll GithubPages
+tags: GitHub
 author: 西夏
 description: Github Pages入门之Hello World！，以及如何绑定自定义域名。
 ---
