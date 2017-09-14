@@ -16,12 +16,13 @@
   text_left: "5px"
   urlTitle: "天津轨道交通"
   url: "http://www.tjgdjt.com/"  
-  
+
+# 名字在点下方的，以香港为标准    
 - city: "香港"
   top: "88.459%"
   left: "71.5%"
-  text_top: "-10px"
-  text_left: "5px"
+  text_top: "7px"
+  text_left: "-20px"
   urlTitle: "香港地铁"
   url: "http://www.mtr.com.hk/"  
   
@@ -142,8 +143,8 @@
 - city: "苏州"
   top: "62%"
   left: "82.847%"
-  text_bottom: "5px"
-  text_left: "5px"
+  text_bottom: "10px"
+  text_left: "0px"
   urlTitle: "苏州轨道交通"
   url: "http://www.sz-mtr.com/"      
   
@@ -154,13 +155,12 @@
   text_left: "-20px"
   urlTitle: "昆明轨道交通"
   url: "http://www.kmgdgs.com/"        
-  
-# 名字在点下方的，以杭州为标准    
+    
 - city: "杭州"
   top: "65.3%"
   left: "81.666%"
   text_top: "7px"
-  text_left: "-20px"
+  text_left: "-10px"
   urlTitle: "杭州地铁"
   url: "http://www.hzmetro.com/"           
   

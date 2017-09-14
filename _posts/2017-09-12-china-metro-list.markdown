@@ -7,39 +7,36 @@ author: 西夏
 description: 中国所有已开通地铁的城市信息汇总。
 ---
 
-<div>
-	<div style="width: 802px; background-color: rgb(204, 232, 207);">
-		<div style="position:relative;width:800px;border:1px solid lightgray">
-			<a title="中国已开通轨道交通城市一览">
-				<img alt="中国已开通轨道交通城市一览" src="/assets/images/post/2017-09-12-china-metro-list/map/map.png" width="800" height="637" style="background-color: rgb(204, 232, 207);">
-			</a>
-			
-			<!-- 后面紧跟的就是城市坐标 -->
-			{% for metro in site.data.metro.maps %}
-				<div style="position:absolute;top:{{ metro.top }};left:{{ metro.left }}">
-					<div style="position:absolute;left:-4px;top:-4px;line-height:0">
-						<b>
-							<img alt="{{ metro.city }}" src="/assets/images/post/2017-09-12-china-metro-list/map/8px-Red_pog.svg.png" title="{{ metro.city }}">
-						</b>
-					</div>
-					<div style="font-size:90%;line-height:110%;position:absolute;width:6em;
-						{% if metro.text_top %}top:{{ metro.text_top }};{% endif %}
-						{% if metro.text_bottom %}bottom:{{ metro.text_bottom }};{% endif %}
-						{% if metro.text_left %}left:{{ metro.text_left }};{% endif %}
-						{% if metro.text_right %}right:{{ metro.text_right }};{% endif %}
-						text-align:left">
-						<b>
-							<span style="padding:1px">
-								<a href="{{ metro.url }}" title="{{ metro.urlTitle }}">{{ metro.city }}</a>
-							</span>
-						</b>
-					</div>
-				</div>
-			{% endfor %}
-			
 
-			
-		</div>
+<div style="width: 802px; background-color: rgb(204, 232, 207);">
+	<div style="position:relative;width:800px;border:1px solid lightgray">
+		<a title="中国已开通轨道交通城市一览">
+			<img alt="中国已开通轨道交通城市一览" src="/assets/images/post/2017-09-12-china-metro-list/map/map.png" width="800" height="637" style="background-color: rgb(204, 232, 207);">
+		</a>
+		
+		<!-- 后面紧跟的就是城市坐标 -->
+		{% for metro in site.data.metro.maps %}
+			<div style="position:absolute;top:{{ metro.top }};left:{{ metro.left }}">
+				<div style="position:absolute;left:-4px;top:-4px;line-height:0">
+					<b>
+						<img alt="{{ metro.city }}" src="/assets/images/post/2017-09-12-china-metro-list/map/8px-Red_pog.svg.png" title="{{ metro.city }}">
+					</b>
+				</div>
+				<div style="font-size:90%;line-height:110%;position:absolute;width:6em;
+					{% if metro.text_top %}top:{{ metro.text_top }};{% endif %}
+					{% if metro.text_bottom %}bottom:{{ metro.text_bottom }};{% endif %}
+					{% if metro.text_left %}left:{{ metro.text_left }};{% endif %}
+					{% if metro.text_right %}right:{{ metro.text_right }};{% endif %}
+					text-align:left">
+					<b>
+						<span style="padding:1px">
+							<a href="{{ metro.url }}" title="{{ metro.urlTitle }}">{{ metro.city }}</a>
+						</span>
+					</b>
+				</div>
+			</div>
+		{% endfor %}
+
 	</div>
 </div>
 
