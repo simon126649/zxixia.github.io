@@ -47,8 +47,7 @@
           \.:::\_ \.:::\   \.:::'/.::::::::::::::::::::::::::::::::::::::
            \.::::\ \.:::\   \.::::::::::::::::::::::::::::::::::::::::::    
 
-## 西夏的个人博客，欢迎迷失西夏！
-
+## 西夏的个人博客，欢迎迷失在[西夏][xixia-url]！
 ---
 
 ### 特别鸣谢：
@@ -66,3 +65,4 @@
 [bootstrap-url]: http://getbootstrap.com/
 [github-url]: https://github.com/
 [dbyll-url]: https://github.com/dbtek/dbyll
+[xixia-url]: http://xixia.info/
