@@ -163,20 +163,20 @@ Markdown有如下三种画分隔线的方式：
 ## 7，图片
 ### 7.1 直接图片
 {% highlight shell %}
-![西夏](/assets/images/xixia.gif)
+![西夏](http://xixia.info/assets/images/xixia.gif)
 {% endhighlight %}
-![西夏](/assets/images/xixia.gif)
+![西夏](http://xixia.info/assets/images/xixia.gif)
 
 <br/>
 ### 7.2 间接图片
 {% highlight shell %}
 ![西夏][xixia_pic]
 
-[xixia_pic]:/assets/images/xixia.gif
+[xixia_pic]:http://xixia.info/assets/images/xixia.gif
 {% endhighlight %}
 ![西夏][xixia_pic]
 
-[xixia_pic]:/assets/images/xixia.gif
+[xixia_pic]:http://xixia.info/assets/images/xixia.gif
 
 
 <!-- 后面是文章参考资料 -->

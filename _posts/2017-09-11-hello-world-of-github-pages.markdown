@@ -4,7 +4,7 @@ title:  "Hello World of Github Pages！"
 categories: Programmer
 tags: GitHub
 author: 西夏
-description: Github Pages入门之Hello World！，以及如何绑定自定义域名。
+description: Github Pages入门之Hello World！
 ---
 
 ### 1，创建Github项目
