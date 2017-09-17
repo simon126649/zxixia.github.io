@@ -137,6 +137,14 @@
 		{% include sidebar.html %}
 	</div>
 
+	<!--
+		左侧边栏底部的导航区域 
+		hidden-xs: 小设备（小于 768px）隐藏
+	-->
+	<div class="col-sm-3 hidden-xs sidebar-nav">
+		{% include sidebar-nav.html %}
+	</div>
+
 	<div class="col-sm-9 col-sm-offset-3">
 		{{ content }}
 
