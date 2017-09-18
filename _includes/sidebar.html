@@ -1,9 +1,21 @@
 <div class="sidebar well">
-{{ site.description }}
+    <header class="sidebar-header" role="banner">
+        <a href="{{ site.baseurl }}/">
+            <img src="/assets/images/xixia.gif" class="img-circle" />
+        </a>
+        <!--
+        <h3 class="title">
+        <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
+        </h3>
+        -->
+    </header>
+    <div class="text-center">
+        {{ site.description }}
+    </div>
 </div>
 
 <div class="sidebar well">
-    <h1>Recent Posts</h1>
+    <h1>最新文章</h1>
     <ul>
         {% for post in site.posts limit:5 %}
           <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
@@ -12,5 +24,5 @@
 </div>
 
 <div class="sidebar well">
-{% include links-list.html %}
+    {% include links-list.html %}
 </div>
