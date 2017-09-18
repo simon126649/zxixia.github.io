@@ -16,9 +16,10 @@
 
     /**
      * Tags & categories tab activation based on hash value. If hash is undefined then first tab is activated.
+     * add archive tab 20170918
      */
     function activateTab() {
-      if(['/tags.html', '/categories.html'].indexOf(window.location.pathname) > -1) {
+      if(['/tags.html', '/categories.html', '/archive.html'].indexOf(window.location.pathname) > -1) {
         var hash = window.location.hash;
         if(hash)
           $('.tab-pane').length && $('a[href="' + hash + '"]').tab('show');
