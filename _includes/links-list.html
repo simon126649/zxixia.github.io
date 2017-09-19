@@ -8,10 +8,6 @@
   <li>
     <a href="{{ link.url }}">
       {{ link.title }}
-        <!-- 非最后一条连接，输出一个， -->
-        {% if forloop.last == false %}
-        ，
-        {% endif %}
     </a>
   </li> 
   {% endfor %}

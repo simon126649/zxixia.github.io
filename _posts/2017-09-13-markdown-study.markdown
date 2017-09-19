@@ -191,8 +191,6 @@ Markdown有如下三种画分隔线的方式：
 
 4，[markdown学习笔记][jianshu-wo-niu]
 
----
-
 <!-- 文章插图和超链接 -->
 [markdown-appinn]: http://www.appinn.com/markdown/
 [csdn-ISaiSai]: http://blog.csdn.net/isaisai/article/details/51513116

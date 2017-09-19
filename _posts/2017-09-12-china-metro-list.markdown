@@ -81,8 +81,6 @@ description: 中国所有已开通地铁的城市信息汇总。
 
 3，[UrbanRail.net][urbanrail-net]
 
----
-
 <!-- 文章插图和超链接 -->
 
 [wiki-china-metro-list]: https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E5%9F%8E%E5%B8%82%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E7%B3%BB%E7%BB%9F

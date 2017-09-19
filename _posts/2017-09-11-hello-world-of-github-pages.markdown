@@ -71,11 +71,6 @@ root
 
 1，[一步步在GitHub上创建博客主页-最新版][Wave-at-csdn]
 
----
-
-
-
-
 
 [settings-page]:/assets/images/post/2017-09-11-hello-world-of-github-pages/settings-page.png "settings page"
 [add-custom-domain]:/assets/images/post/2017-09-11-hello-world-of-github-pages/add-custom-domain.png "add custom domain"

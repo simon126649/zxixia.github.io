@@ -105,8 +105,6 @@ Map (C) 1998 Matthew Thomas. Freely usable if this line is included. <-
 
 2，[ASCII Generator][ascii-generator]
 
----
-
 <!-- 文章插图和超链接 -->
 [chris-ascii-art]: http://www.chris.com/ascii/
 [ascii-generator]: http://www.network-science.de/ascii/
