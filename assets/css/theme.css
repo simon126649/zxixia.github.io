@@ -17,6 +17,10 @@ body {
     color: #aaa;
 }
 
+.footer a:hover {
+    color: #e74c3c;
+}
+
 .sidebar {
     color: #fff;
     background-color: #28323C;
@@ -64,6 +68,10 @@ body {
 .article {
     font-size: 17px;
 	color: #28323C;
+}
+
+.article img {
+    max-width:100%;
 }
 
 /* for tags, categories, archive */
