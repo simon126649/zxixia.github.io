@@ -18,7 +18,8 @@ layout: default
             {% endcase %}
             {{ post.date | date: "%Y" }}
             -->
-            {{ post.date | date: "%Y年-%m月-%d日" }}
+            {% assign date_format = site.date_format.title %}
+            {{ post.date | date: date_format }}
         </span>
         
         <h2>
