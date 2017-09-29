@@ -1,0 +1,37 @@
+- type: "Android"
+  sites:
+    - title: "Android Developer"
+      url: "https://developer.android.google.cn/index.html"
+      description: "中文站点"
+    - title: "Android Studio 中文社区"
+      url: "http://www.android-studio.org/index.php"
+      description: "工具下载"
+- type: "社区"
+  sites:  
+    - title: "Stack Overflow"
+      url: "https://stackoverflow.com/"
+    - title: "CSDN"
+      url: "http://www.csdn.net/"
+      description: "资源，博客，社区"
+    - title: "博客园"
+      url: "https://www.cnblogs.com/"
+      description: "博客，资讯"
+- type: "Git"
+  sites:  
+    - title: "Github"
+      url: "https://github.com/"
+    - title: "Bitbucket"
+      url: "https://bitbucket.org/"
+      description: "免费，可创建私有项目"
+    - title: "开源中国"
+      url: "http://www.oschina.net/"
+- type: "Web"
+  sites:  
+    - title: "W3school"
+      url: "http://www.w3school.com.cn/index.html"
+      description: "中文站点，教程"
+    - title: "菜鸟教程"
+      url: "http://www.runoob.com/"
+      description: "教程"
+  
+  
