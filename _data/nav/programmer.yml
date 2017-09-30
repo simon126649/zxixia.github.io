@@ -16,15 +16,23 @@
     - title: "博客园"
       url: "https://www.cnblogs.com/"
       description: "博客，资讯"
+    - title: "segmentfault"
+      url: "https://segmentfault.com/"
+      description: "中文问答"
+    - title: "知乎"
+      url: "https://www.zhihu.com/"
+      description: "知识互动"
 - type: "Git"
   sites:  
     - title: "Github"
       url: "https://github.com/"
+      description: "代码"
     - title: "Bitbucket"
       url: "https://bitbucket.org/"
       description: "免费，可创建私有项目"
     - title: "开源中国"
       url: "http://www.oschina.net/"
+      description: "代码"
 - type: "Web"
   sites:  
     - title: "W3school"
@@ -33,5 +41,10 @@
     - title: "菜鸟教程"
       url: "http://www.runoob.com/"
       description: "教程"
+- type: "新闻"
+  sites:  
+    - title: "虎嗅"
+      url: "https://www.huxiu.com/"
+      description: "科技新闻"
   
   
