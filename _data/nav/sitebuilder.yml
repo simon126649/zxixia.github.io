@@ -26,6 +26,9 @@
     - title: "Drupal"
       url: "https://www.drupal.org/"
       description: "国外的开源CMS系统。"
+    - title: "MetInfo"
+      url: "https://www.metinfo.cn/"
+      description: "免费开源的企业建站CMS系统。"
 - type: "企业建站"
   sites:  
     - title: "CmsEasy"
