@@ -22,17 +22,26 @@ description: 收集整理的工作生活中，常用的好软件。
     <th width="80px" class="text-center">下载地址</th>
   </tr>
   
-{% assign old_type = '' %}
+{% assign col_type = '' %}
 {% assign index = 1 %}  
+{% assign row_count = 0 %}  
 {% for soft in site.data.nav.soft %}
 {% for _soft in soft.softs %}
-    {% if old_type != soft.type and old_type != '' %}
-      <tr height="5px" bgcolor="#eaecf0"><th/><th/><th/><th/><th/><th/><th/></tr>
+    {% if col_type != soft.type and col_type != '' %}
+      <tr height="5px" bgcolor="#eaecf0"><td colspan="7"></td></tr>
     {% endif %}
-    {% assign old_type = soft.type %}
+    {% if col_type != soft.type or col_type == '' %}
+      {% for _soft in soft.softs %}
+        {% assign row_count = row_count | plus: '1' %}
+      {% endfor %}
+    {% endif %}
+    {% assign col_type = soft.type %}
     <tr height="70px">
         <td>{{ index }}</td>
-        <td>{{ soft.type }}</td>
+        {% if row_count > 0 %}
+          <td rowspan="{{ row_count }}">{{ soft.type }}</td>
+          {% assign row_count = 0 %} 
+        {% endif %}
         <td><strong>{{ _soft.title }}</strong></td>
         <td>{{ _soft.free_type }}</td>
         <td>{{ _soft.os }}</td>
