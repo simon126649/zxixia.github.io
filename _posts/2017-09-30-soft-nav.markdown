@@ -22,10 +22,14 @@ description: 收集整理的工作生活中，常用的好软件。
     <th width="80px" class="text-center">下载地址</th>
   </tr>
   
-
+{% assign old_type = '' %}
 {% assign index = 1 %}  
 {% for soft in site.data.nav.soft %}
 {% for _soft in soft.softs %}
+    {% if old_type != soft.type and old_type != '' %}
+      <tr height="5px" bgcolor="#eaecf0"><th/><th/><th/><th/><th/><th/><th/></tr>
+    {% endif %}
+    {% assign old_type = soft.type %}
     <tr height="70px">
         <td>{{ index }}</td>
         <td>{{ soft.type }}</td>

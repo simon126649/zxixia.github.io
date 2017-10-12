@@ -5,6 +5,11 @@
       free_type: 免费
       description: "微软出品，功能强大的编辑利器"
       os: "Windows"
+    - title: "TextAnalysisTool.NET"
+      url: "http://textanalysistool.github.io/"
+      free_type: 免费
+      description: "功能强大的Log分析工具，支持高亮，筛选"
+      os: "Windows"
 - type: "图像处理"
   softs:  
     - title: "PixBuilder Studio"
